@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap");
+*{
+    margin:0; 
+    padding:0;  
+    scroll-behavior: smooth;  
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/* Home */
+#home_name{
+    padding:20px 20px;
+    
+}
+#home_name a{
+    color: white;
+}
+nav ul li{
+    float:right;
+    padding:20px 20px;    
+}
+ul {
+    list-style: none;
+}
+li a {
+    text-align: center;
+    color:white;
+}
+li a:hover{
+    color: #fd3434;
+}
+#home{
+    height:720px;
+    width:100%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    background-image: url("./assets/back1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.home_content{
+    margin-top:350px;
+    padding-left:20px;
+    font-size: 25px;
+    color: white;
+}
+.home_content button{
+    background:#ffffff;
+    color:rgb(0, 0, 0);
+    width:250px;
+    height:35px;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #bb2b2b 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;    
+}
+.home_content button:hover{
+    background-position: 0;
+    color:white;
+}
+
+/* --------------------- */
+
+
+/* About */
+#about{
+    height:720px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    min-height: 80vh;
+    max-width: 70rem;
+}
+.mypic img {
+    height: 12rem;
+    width: auto;
+    border-radius: 50%;
+    margin: 2rem;
+    box-shadow: 0 20px 30px 0 #fd34346c;
+}
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.content p {
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+.content button{
+    font-family: monospace;
+    width:150px;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: #d82323;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, #d82323 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+    cursor: pointer;
+}
+.content button:hover{
+    background-position: 0;
+    color: #ffffff;
+}
+  /* ------------------------ */
+
+
+/* ----------Resume----------- */
+.resume {
+    width: 100%;
+    height: 720px;
+    padding-top: 1px;
+    background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4)),url(./assets/back1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); 
+}
+.xp{
+    display: grid;
+    grid-template-areas: 'left right';
+    justify-content: center;
+    padding-top: 85px;
+    grid-column-gap: 40px;
+}
+.work {
+    width: 570px;
+    height: 550px;
+    padding:30px;
+}
+
+.purpleFade {
+    background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4));
+    background-color: rgba(75, 75, 75, 0.466);
+    color: white;
+}
+
+.boxtext p {
+    font-size: 17px;
+}
+
+.boxtext h4 {
+    font-size: 22px;
+}
+
+.boxtext hr {
+    margin: 25px 0px;
+}
+/* ---------------------- */
+
+  /* Projects */
+.projects {
+    text-align: center;
+}
+
+.projects h2 {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.projects p {
+    font-size: 18px;
+    color: #696969;
+}
+
+.wall {
+    display:grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    grid-row-gap: 100px;
+    grid-column-gap:250px ;
+    padding:50px;
+}
+
+.frame p {
+    font-size: 18px;
+}
+.pic {
+    height: 205px;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    transition: 1s ease;
+}
+.pic img:hover{
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+/* --------------------- */
+.contact {
+    width: 100%;
+    height: 720px;
+    padding-top: 1px;
+    background-image: url("./assets/back1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); 
+}
+
+.Gridcontact{
+    background:linear-gradient(to right,rgba(26, 25, 25, 0.705),rgba(63, 63, 63, 0.726));
+    color:white;
+    width:800px;
+    margin:auto;
+    display:grid;  
+    grid-template-columns: 300px 300px;  
+    justify-content: center;  
+    border-radius: 20px;
+    margin-top:28px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.grid5{
+    grid-column: 1/3;
+}
+.Gridcontact button{
+    grid-column:1/3;
+    justify-self: center;
+    width:200px;
+    height:40px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color:rgba(104, 104, 104, 0.466);
+    color:white;
+    cursor: pointer;
+}
+.Gridcontact button:hover{
+    background:black;
+}
+.Gridcontact div{
+    padding:15px;
+}
+.Gridcontact input{
+    width:280px;
+    height:40px;
+    border-radius: 20px;
+    background-color:rgba(104, 104, 104, 0.466);
+    color:white;
+}
+input[type="text"],input[type="number"],textarea{
+    padding-left: 25px;
+}
+.Gridcontact textarea{
+    border-radius: 20px;
+    background-color:rgba(104, 104, 104, 0.466);
+    color:white;
+}
+
+/* Button to go to top of the page */
+#gotohome{
+    text-align:center;
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    font-size: 48px;   
+    width:70px;
+    height:80px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+#gotohome {
+    border-color: #818181;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, #0c0c0c 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+#gotohome:hover {
+    background-position: 0;
+    color:#d82323;
+}
+
+/* Social buttons on footer */
+.social-buttons{
+    position: absolute;
+}
+.social-buttons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+  }
+    
+  .social-buttons a:hover::before{
+    transform: scale(0);
+  }
+  
+  .social-buttons a i{
+    transition: 0.3s ease-in;
+  }
+  
+  .social-buttons a:hover i{
+    background: linear-gradient(45deg,#cf2c2c,#30336b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+  }
+  
