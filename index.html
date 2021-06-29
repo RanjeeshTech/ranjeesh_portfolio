@@ -10,12 +10,12 @@
 </head>
 <body>
     <!-- Button to scroll to top of the page -->
-    <a href="#"><button id="gotohome" onclick="topFunction()">⮸</button></a>
+    <a href="#"><button id="gotohome" onclick="topFunction()"><b>⮸</b></button></a>
      
     
-    <div id="home">   <!-- Home page -->
+<div id="home">   <!-- Home page -->
     <header>    <!-- heading -->          
-        <nav>           
+        <nav class="large_screen">           
             <ul>
                 <li><a href="#con">Contact</a></li>
                 <li><a href="#pro">Projects</a></li>
@@ -24,12 +24,21 @@
                 <li><a href="#home">Home</a></li>
             </ul>
         </nav>
+        <nav  class="small_screen">           
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#pro">Projects</a></li>
+                <li><a href="#con">Contact</a></li>
+            </ul>
+        </nav>
     </header>  
     <h2 id="home_name"><a href="">RANJEESH</a></h2>   
     <div class="home_content">
         <h1>Ranjeesh R</h1>
         <p>I'm a Prograd</p>
-        <a href="https://github.com/RanjeeshTech"><button id="link1">Visit my GITHUB profile</button></a>
+        <a href="https://github.com/RanjeeshTech"><button id="link1"><b>Visit my GITHUB profile</b>></button></a>
     </div>
 </div> <!-- End of home page -->
 <div class="main_content">
@@ -177,7 +186,7 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-</div>        
+        </div>        
         <nav>
             <ul>
                 <li>

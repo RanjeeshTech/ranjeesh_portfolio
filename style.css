@@ -12,11 +12,14 @@ a{
 }
 /* Home */
 #home_name{
-    padding:20px 20px;
-    
+    padding:20px 20px;    
 }
 #home_name a{
     color: white;
+}
+.small_screen{
+    display: none;
+    float:right;
 }
 nav ul li{
     float:right;
@@ -126,11 +129,10 @@ li a:hover{
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); 
 }
 .xp{
-    display: grid;
-    grid-template-areas: 'left right';
+    display: flex;
     justify-content: center;
     padding-top: 85px;
-    grid-column-gap: 40px;
+    grid-column-gap: 100px;
 }
 .work {
     width: 570px;
@@ -142,6 +144,7 @@ li a:hover{
     background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4));
     background-color: rgba(75, 75, 75, 0.466);
     color: white;
+    border-radius: 10px;
 }
 
 .boxtext p {
@@ -191,6 +194,7 @@ li a:hover{
     width: 100%;
     height: 100%;
     transition: 1s ease;
+    border-radius: 10px;
 }
 .pic img:hover{
     transform: scale(1.2);
@@ -317,3 +321,116 @@ input[type="text"],input[type="number"],textarea{
     transform: scale(2.2);
   }
   
+@media only screen and  (max-width:400px){
+    .large_screen{
+        display: none;
+    }
+    .small_screen{
+        display: flex;
+    }
+    nav ul li{
+        float:none;
+        padding:10px;    
+    }
+    #home_name{
+        padding:10px 20px;    
+    }
+    #home{
+        width: 100%;
+        height:650px;
+        background-size: cover;
+        background-position: center;
+    }
+    #home .home_content{
+        position: relative;
+        bottom: 40px;
+        text-align: center;
+    }
+    #about{
+        text-align: center;
+        flex-direction: column;
+        height:790px;
+        width:96%;
+        margin:2%;
+    }
+    .content h2{
+        font-size: 26px;
+    }
+    .content p{
+        font-size: 96%;
+    }
+    .content button{
+        font-size: 26px;
+    }
+    .mypic img {
+        height: 10rem;
+        width: auto;
+    }
+    .resume{
+        height:1310px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .xp{
+        flex-direction: column;
+        grid-row-gap: 40px;
+        grid-column-gap: 0px;
+    }
+    .work {
+        width: 100%;
+        height: 550px;
+        padding:15px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .boxtext h4{
+         font-size: 17px;   
+    }
+    .boxtext p{
+        font-size: 15.5px;   
+   }
+   .wall {
+        grid-template-columns: 270px;
+        grid-row-gap: 60px;
+        grid-column-gap:0px;
+    }
+    .Gridcontact{
+        width:100%;
+        margin:auto;
+        display:grid;  
+        grid-template-columns: 300px;  
+        justify-content: center;  
+        margin-top:28px;
+        padding-top: 60px;
+    }
+    .contact {
+        height:935px;
+        padding:20px;
+    }
+    .grid5{
+        grid-column: 1/2;
+    }
+    .Gridcontact button{
+        grid-column:1/2;
+    }
+    textarea{
+        width:280px;
+        height:100px;
+    }
+
+    #gotohome{
+        bottom: 70px;
+        right: 4px;
+        font-size: 30px;   
+        width:30px;
+        height:50px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .social-buttons a{
+        margin: 0px 5px;
+    }
+    .footer nav{
+        display: none;
+    }
+}
